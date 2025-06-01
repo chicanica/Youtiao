@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'GangOfThree';
+    src: url('src/fonts/gangofthree.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: 16px;
+    font-weight: 400;
+    font-style: normal;
+    cursor: default;
+    scroll-behavior: smooth
+}
+
+ul, ol {
+    list-style: none; 
+    margin: 0;       
+    padding: 0;       
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1{
+    font-family: 'GangOfThree';
+    font-size: 96px;
+    margin: 0 0;
+}
+
+h2{
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0 0 30px;
+}
+
+h3{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+h3{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.wrapper{
+    max-width: 1140px;
+    margin: 0 auto ;
+}
+
+.wrapper.top .back{
+    position: absolute;
+    width: 75%;
+    top:0;
+    right: 0;
+    z-index: -2;
+}
+
+header .nav{
+    margin-top: 40px;
+    display: flex;
+    gap: 40px;
+    justify-content: start;
+    align-items: center;
+}
+
+header .nav a:hover{
+    color: #CC0E33;
+}
+
+header .nav a:active{
+    color: #510017;
+}
+
+header .nav .logo{
+    margin-right: 20px;
+
+}
+
+#hero{
+    width: 100%;
+    width: 100vh;
+    position: relative;
+}
+
+#hero a{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    width: 200px;
+    height: 40px;
+    border: 2px solid #CC0E33;
+    border-radius: 40px;
+}
+
+#hero a:hover{
+    border: 2px solid #CC0E33;
+    color:#000000;
+    background-color: #CC0E33;
+}
+
+#hero a:active{
+    border: 2px solid #CC0E33;
+    color:#000000;
+    background-color: #510017;
+}
+
+#hero iframe{
+    position: absolute;
+    left: 250px;
+    top: -230px;
+    display: flex; 
+    width: 1920px; 
+    height: 1080px; 
+    transform: scale(0.65); 
+    transform-origin: top left; 
+    border:none;
+    z-index: -1;
+}
+
+#hero .content p{
+    color: #4AE6B0;
+    font-weight: 700;
+    margin: 150px 0 10px;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    gap: 400px;
+}
+
+#about .part{
+    width: 100%;
+    position: relative;
+    top: -150px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    column-gap: 30px;
+}
+
+#about .part.second {
+    top: -150px;
+}
+
+#about .part.first .content{
+    grid-column: 3 / 4;
+    width: 90%; 
+}
+
+#about .part.second .content{
+    grid-column: 1 / 2;
+}
+
+#about iframe{
+    position: absolute;
+    /* left: 450px;
+    top: 20px; */
+    display: flex; 
+    width: 1920px; 
+    height: 1080px; 
+    transform: scale(0.6); 
+    transform-origin: top center; 
+    border:none;
+    z-index: -1;
+}
+
+#about .part iframe.start{
+    right: -150px;
+    top: -100px;
+}
+
+#about .part iframe.end{
+    left: -200px;
+    top: -200px;
+}
+
+.wrapper.middle .back{
+    position: absolute;
+    width: 100%;
+    /* top:0; */
+    right: 0;
+    z-index: -2;
+}
+
+.wrapper.middle .lamp{
+    position: absolute;
+    width: 100%;
+    margin-top: 150px;
+    right: 0;
+    z-index: -1;
+}
+
+#menu{
+    padding-top: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menu h2{
+    margin: 30px 0 80px;
+}
+
+.category-switcher{
+    margin-bottom: 100px;
+}
+
+.category-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.category-btn .wrapper.img{
+    width: 160px;
+    height: 160px;
+    background-color: #000000;
+    border: 2px solid #888888;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-btn p{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: 16px;
+    font-weight: 700;
+    font-style: normal;
+    margin: 20px 0 0;
+}
+
+.category-btn:hover .wrapper.img{
+    border: 2px solid #CC0E33;
+    background-color: #CC0E33;
+}
+
+.category-btn:hover p{
+    color: #CC0E33;
+}
+
+.category-btn.active  .wrapper.img{
+    border: 2px solid #CC0E33;
+    background-color: #510017;
+}
+
+.category-btn.active  p{
+    color: #CC0E33;
+}
+
+.menus{
+    width: 100%;
+}
+
+.menu-list{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px 30px;
+}
+
+.card {
+    width: 100%;
+    padding:10px;
+    border-radius:4px;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card h3{
+    margin: 20px 0 0;
+}
+
+.card .description{
+    margin: 10px 0 0;
+}
+
+.card .structure{
+    margin: 10px 0 0;
+    font-size: 12px;
+    color: #888888;
+}
+
+.card .wrapper.price{
+    margin: 15px 0 0;
+    display: flex;
+    gap: 20px;
+    align-items: end;
+}
+
+.card .wrapper.price .price{
+    margin: 0 0;
+    color: #CC0E33;
+    font-size: 32px;
+}
+
+.card .wrapper.price .weight{
+    margin: 0 0 3px;
+    color: #888888;
+}
+
+.wrapper.bottom {
+    margin-top: 150px;
+}
+
+.wrapper.bottom .back{
+    position: absolute;
+    width: 100%;
+    right: 0;
+    z-index: -2;
+}
+
+#contacts{
+    display: grid;
+    grid-template-columns: 8fr 1fr 3fr;
+    column-gap: 30px;
+    padding-top: 70px;
+    height: 100%;
+}
+
+#contacts .map{
+    grid-column: 1 / 2;
+}
+
+#contacts .content{
+    grid-column: 3 / 4;
+    height: fit-content;
+}
+
+#contacts .content p.info{
+    color: #CC0E33;
+}
+
+#contacts .content a:hover{
+    color: #890021;
+}
+
+#contacts .content p{
+    margin: 0 0 20px;
+}
+
+#contacts .content h4{
+    margin: 0 0 5px;
+}
+
+footer{
+    margin: 300px 0 0;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+footer iframe{
+    position: absolute;
+    left: -200px;
+    margin-top: -100px;
+    /* top: 20px; */
+    display: flex; 
+    width: 1920px; 
+    height: 1080px; 
+    transform: scale(0.65); 
+    transform-origin: top center; 
+    border:none;
+    z-index: -1;
+}
+
+footer .content{
+    grid-column: 1 / 2;
+    margin: 40px 0 0;
+}
+
+footer .nav{
+    display: flex;
+    gap: 40px;
+    margin: 40px 0 35px;
+}
+
+footer .nav a:hover{
+    color: #CC0E33;
+}
+
+footer .nav a:active{
+    color: #510017;
+}
+
+footer .logo{
+    width: 100%;
+}
+
+footer .info{
+    display: flex;
+    gap: 40px;
+    margin: 5px 0;
+    color: #888888;
+    font-size: 12px;
+}
+
+footer .info:hover{
+    color: #fff;
+}
+
+footer .info:active{
+    color: #CC0E33;
+}
+
+
+footer .copy{
+    margin-top: 45px;
+}

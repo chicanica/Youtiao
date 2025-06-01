@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ютяо</title>
+</head>
+<body>
+
+    <div class="wrapper top">
+        <header>
+            <ul class="nav">
+                <li class="logo"><a href="index.html"><img src="src/img/logo.svg" alt=""></a></li>
+                <li ><a href="#menu-anchor">Меню</a></li>
+                <li ><a href="#about-anchor">О нас</a></li>
+                <li ><a href="#contacts">Контакты</a></li>
+            </ul>
+        </header>
+        <div id="hero" style="height: 1000px;">
+            <div class="content">
+                <p>Попробуй Китай<br>на вкус</p>
+                <h1>КИТАЙСКИЙ<br>СТРИТФУД</h1>
+                <a href="#menu-anchor">Посмотреть меню</a>
+            </div>
+            <iframe src="src/scenes/scene1/scene1.html" scrolling="no" frameborder="0"></iframe>
+            
+        </div>
+        <div id="about">
+            <div class="part first">
+                <iframe id="about-anchor" class="start" src="src/scenes/scene2/scene2.html" scrolling="no" frameborder="0"></iframe>
+                <div class="content">
+                    <h2 >О нас</h2>
+                    <p>
+                        Добро пожаловать в Ютяо — место, где каждый укус погружает вас в атмосферу китайского стритфуда! 
+                    </p>
+                    <p>
+                        Мы предлагаем хрустящие ютяо и другие аутентичные блюда, которые подарят незабываемые вкусовые ощущения вам
+                    </p>
+                </div>
+            </div>
+            <div class="part second">
+                <div class="content">
+                    <p>
+                        В Ютяо царит дружелюбная атмосфера, где каждый гость становится частью нашей большой семьи
+                    </p>
+                    <p>
+                        Откройте для себя мир ярких вкусов и наслаждайтесь настоящими кулинарными шедеврами вместе с нами! 
+                    </p>
+                </div>
+                <iframe class="end" src="src/scenes/scene3/scene3.html" scrolling="no" frameborder="0"></iframe>
+            </div>
+        </div>
+        <img class="back" src="src/img/back-top.png" alt="">
+    </div>
+    <div class="wrapper middle">
+        <img class="back" src="src/img/back-middle.png" alt="">
+        <img class="lamp" src="src/img/lamp.png" alt="">
+        <div id="menu">
+            <h2 style="text-align: center;" id="menu-anchor">Меню</h2>
+
+            <div class="category-switcher">
+                <button data-category="list1" class="category-btn active">
+                    <div class="wrapper img">
+                        <img style="height: 50%;" src="src/img/icon-snacks.png" alt="">
+                    </div>
+                    <p>Закуски</p>
+                </button>
+                <button data-category="list2" class="category-btn">
+                    <div class="wrapper img">
+                        <img style="width: 50%;" src="src/img/icon-food.png" alt="">
+                    </div>
+                    <p>Основные блюда</p>
+                </button>
+                <button data-category="list3" class="category-btn">
+                    <div class="wrapper img">
+                        <img style="width: 60%;" src="src/img/icon-sweet.png" alt="">
+                    </div> 
+                    <p>Десерты</p>
+                </button>
+                <button data-category="list4" class="category-btn">
+                    <div class="wrapper img">
+                        <img style="width: 60%; margin-right: 10px;" src="src/img/icon-drinks.png" alt="">
+                    </div>
+                    <p>Напитки</p>
+                </button>
+            </div>
+
+            <div class="menus">
+                <div id="list1" class="menu-list">
+                    <div class="card">
+                        <img src="src/img/snack-1.png" alt="">
+                        <h3>Хрустящие Ютяо</h3>
+                        <p class="description">Золотистые, хрустящие внутри, подаются с медовым или соевым соусом</p>
+                        <p class="structure">Состав: пшеничная мука, вода, сахар, соль, разрыхлитель, кунжутное масло</p>
+                        <div class="wrapper price">
+                            <p class="price">150₽</p>
+                            <p class="weight">/ 150г (5 шт)</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="src/img/snack-2.png" alt="">
+                        <h3>Рисовые шарики «Цзяньфань»</h3>
+                        <p class="description">Хрустящие шарики из клейкого риса с насыщенной начинкой из сливочного сыра</p>
+                        <p class="structure">Состав: клейкий рис, сливочный сыр, кунжутное масло, соль</p>
+                        <div class="wrapper price">
+                            <p class="price">180₽</p>
+                            <p class="weight">/ 180г (6 шт)</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="src/img/snack-3.png" alt="">
+                        <h3>Куриные крылья «Лунчжоу»</h3>
+                        <p class="description">Острые куриные крылышки с кунжутом. имбирем, чесноком и ароматными специями</p>
+                        <p class="structure">Состав: куриные крылья, соевый соус, чеснок, имбирь, чили-паста, кунжутное масло, специи</p>
+                        <div class="wrapper price">
+                            <p class="price">250₽</p>
+                            <p class="weight">/ 200г (5 шт)</p>
+                        </div>
+                    </div>  
+                    <div class="card">
+                        <img src="src/img/snack-4.png" alt="">
+                        <h3>Пельмени на пару<br>«Драконий Вкус»</h3>
+                        <p class="description">Сочные китайские пельмени на пару с мясной начинкой из курицы или свинины на выбор</p>
+                        <p class="structure">Состав: пшеничная мука, мясной фарш (свинина/курица), лук, имбирь, соевый соу</p>
+                        <div class="wrapper price">
+                            <p class="price">220₽</p>
+                            <p class="weight">/ 250г (7 шт)</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="src/img/snack-5.png" alt="">
+                        <h3>Жареные китайские пельмени</h3>
+                        <p class="description">Хрустящие жареные китайские пельмени с мясной или овощной начинкой на выбор</p>
+                        <p class="structure">Состав: пшеничная мука, мясной фарш (свинина/курица), лук, имбирь, соевый соу</p>
+                        <div class="wrapper price">
+                            <p class="price">220₽</p>
+                            <p class="weight">/ 250г (7 шт)</p>
+                        </div>
+                    </div> 
+                    <div class="card">
+                        <img src="src/img/snack-6.png" alt="">
+                        <h3>Огненные бобы «Хуосяо»</h3>
+                        <p class="description">Маринованные бобы в пикантном соусе из чили, чеснока и уксуса </p>
+                        <p class="structure">Состав: маринованные бобы в соусе из чили, чеснока и уксуса</p>
+                        <div class="wrapper price">
+                            <p class="price">220₽</p>
+                            <p class="weight">/ 120г</p>
+                        </div>
+                    </div>             
+                </div>
+                <div id="list2" class="menu-list" style="display:none;">
+                    <div class="card">
+                        <img src="src/img/food-1.png" alt="">
+                        <h3>Лапша по-шаолиньски</h3>
+                        <p class="description">Жареная лапша с мясом на выбор и овощами в остром соусе</p>
+                        <p class="structure">Состав: яичная или пшеничная лапша, курица/свинина/говядина/морепродукты, овощи (капуста, морковь), зеленый лук, перец чили, специи, соевый соус, масло для жарки</p>
+                        <div class="wrapper price">
+                            <p class="price">350₽</p>
+                            <p class="weight">/ 350г</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="src/img/food-2.png" alt="">
+                        <h3>Тушеное мясо в пряном соусе</h3>
+                        <p class="description">Мягкое сочное мясо на выбор в насыщенном пряном соусе</p>
+                        <p class="structure">Состав: говядина/свинина (мякоть), лук репчатый, соевый соус, специи (корица, перец), бульон или вода</p>
+                        <div class="wrapper price">
+                            <p class="price">360₽</p>
+                            <p class="weight">/ 340г</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="src/img/food-3.png" alt="">
+                        <h3>Рис с уткой по-пекински</h3>
+                        <p class="description">Ароматный свежий рис с тонкими насыщенными ломтиками в утки в ароматном соусе и хрустящими овощами</p>
+                        <p class="structure">Состав: рис жасмин/длиннозерный, утка по-пекински (тонкие ломтики), огурцы, зеленый лук, сладкий соус из бобов и кунжута</p>
+                        <div class="wrapper price">
+                            <p class="price">380₽</p>
+                            <p class="weight">/ 400г</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="src/img/food-4.png" alt="">
+                        <h3>Курочка «Гуньбао»</h3>
+                        <p class="description">Хрустящая курица в орехово-чилистом соусе</p>
+                        <p class="structure">Состав: куриное филе, арахис, чили-паста, соевый соус, уксус рисовый, чеснок, имбирь</p>
+                        <div class="wrapper price">
+                            <p class="price">330₽</p>
+                            <p class="weight">/ 300г</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="list3" class="menu-list" style="display:none;">
+                    <div class="card">
+                        <img src="src/img/sweet-1.png" alt="">
+                        <h3>Мандариновое желе</h3>
+                        <p class="description">Освежающее фруктовое желе из сока мандаринов</p>
+                        <p class="structure">Состав: мандариновый сок, желатин, мята, мед</p>
+                        <div class="wrapper price">
+                            <p class="price">130₽</p>
+                            <p class="weight">/ 150г</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="src/img/sweet-2.png" alt="">
+                        <h3>Золотой Ютяо</h3>
+                        <p class="description">Китайские хлебные палочки с кунжутом и медом</p>
+                        <p class="structure">Состав: пшеничная мука, мед, кунжутное масло и семена</p>
+                        <div class="wrapper price">
+                            <p class="price">150₽</p>
+                            <p class="weight">/ 150г (5 шт)</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="src/img/sweet-3.png" alt="">
+                        <h3>Лунный пряник «Лунбао»</h3>
+                        <p class="description">Традиционный китайский пряник в форме луны с насыщенным пряным вкусом и ароматом корицы и имбиря</p>
+                        <p class="structure">Состав: пшеничная мука, сахар коричневый или тростниковый сироп, имбирь сушеный молотый, корица молотая, мед натуральный</p>
+                        <div class="wrapper price">
+                            <p class="price">120₽</p>
+                            <p class="weight">/ 120г</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="src/img/sweet-4.png" alt="">
+                        <h3>Молочный чай с жемчугом «Бобо Бум»</h3>
+                        <p class="description">Популярный освежающий напиток с мягким вкусом и жемчугом внутри</p>
+                        <p class="structure">Состав: черный чай «Пуэр», молоко или сгущенка, жемчужные шарики (боба), сахар</p>
+                        <div class="wrapper price">
+                            <p class="price">180₽</p>
+                            <p class="weight">/ 350г</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="list4" class="menu-list" style="display:none;">
+                    <div class="card">
+                        <img src="src/img/drink-1.png" alt="">
+                        <h3>Золотой чай Пуэр</h3>
+                        <p class="description">Особая разновидность классического Пуэра с богатым мягким вкусом с нотками ореха и карамели</p>
+                        <p class="structure">Состав: ферментированные листья черного чая Пуэр высшего сорта</p>
+                        <div class="wrapper price">
+                            <p class="price">200₽</p>
+                            <p class="weight">/ 400мл</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="src/img/drink-2.png" alt="">
+                        <h3>Имбирный лимонад</h3>
+                        <p class="description">Натуральный лимонад на основе свежего имбиря с добавлением лимонного сока и меда</p>
+                        <p class="structure">Состав: свежий имбирь; лимонный сок; мед; газированная вода</p>
+                        <div class="wrapper price">
+                            <p class="price">160₽</p>
+                            <p class="weight">/ 350мл</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="src/img/drink-3.png" alt="">
+                        <h3>Натуральный сливовый сок</h3>
+                        <p class="description">Освежающий сок из спелых сливовых плодов без добавления сахара</p>
+                        <p class="structure">Состав: черный чай; цветы жасмина; сливочное молоко или сливки; сахар</p>
+                        <div class="wrapper price">
+                            <p class="price">180₽</p>
+                            <p class="weight">/ 350мл</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="src/img/drink-4.png" alt="">
+                        <h3>Молочный чай с жасмином</h3>
+                        <p class="description">Нежный черный чай с добавлением цветков жасмина и сливочного молока</p>
+                        <p class="structure">Состав: черный чай; цветы жасмина; сливочное молоко или сливки; сахар</p>
+                        <div class="wrapper price">
+                            <p class="price">220₽</p>
+                            <p class="weight">/ 400мл</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </div>
+    <div class="wrapper bottom">
+            <img class="back" src="src/img/back-bottom.png" alt="">
+            <div id="contacts">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.0633798929875!2d30.35294117697621!3d59.93109047491129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631a4fc3f7f57%3A0x5a0dccfe3aedac4b!2z0YPQuy4g0JzQsNGA0LDRgtCwLCAyLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMDI1!5e0!3m2!1sru!2sru!4v1747653539915!5m2!1sru!2sru" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <div class="content">
+                    <h2>Контакты</h2>
+                    <p>Ждём вас, чтобы вместе насладиться аутентичными блюдами китайского стритфуда!</p>
+                    <h4>Адрес в Санкт-Петербурге:</h4>
+                    <p class="info"><a href="https://maps.google.com/?q=СПб,+ул.+Марата,+д.+2" target="_blank">Санкт-Петербург, ул. Марата, 2</a></p>
+                    <h4>Время работы:</h4>
+                    <p class="info">Пн-Вс: 10:00-22:00</p>
+                    <p>Мы всегда рады ответить на ваши вопросы. Свяжитесь с нами и узнайте все о вкусной  уличной еде в ресторане Ютяо!  </p>
+                    <h4>Телефон:</h4>
+                    <p class="info"><a href="tel:+78129876543">+7 (812) 987-65-43</a></p>
+                    <h4>Электронная почта:</h4>
+                    <p class="info"><a href="mailto:info@yutiao-spb.ru">info@yutiao-spb.ru</a></p>
+                </div>               
+            </div>
+
+            <footer>
+                <div class="content">
+                    <a href="index.html" class="logo"><a href="index.html"><img width="90%" src="src/img/logo.svg" alt=""></a>
+                    <ul class="nav">
+                        <li ><a href="#menu-anchor">Меню</a></li>
+                        <li ><a href="#about-anchor">О нас</a></li>
+                        <li ><a href="#contacts">Контакты</a></li>
+                    </ul>
+                    <p class="info"><a href="https://maps.google.com/?q=СПб,+ул.+Марата,+д.+2" target="_blank">Санкт-Петербург, ул. Марата, 2</a></p>
+                    <p class="info"><a href="tel:+78129876543">+7 (812) 987-65-43</a></p>
+                    <p class="info"><a href="mailto:info@yutiao-spb.ru">info@yutiao-spb.ru</a></p>
+                    <p class="copy">© Ютяо</p>
+                </div>
+                
+                <iframe src="src/scenes/scene4/scene4.html" scrolling="no" frameborder="0"></iframe>
+            </footer>
+    </div>
+
+<script src="script.js"></script>
+
+</script>
+</body>
+</html>

@@ -21,7 +21,8 @@ body{
     font-weight: 400;
     font-style: normal;
     cursor: default;
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
+    margin: 0;
 }
 
 ul, ol {
@@ -444,7 +445,6 @@ footer .copy{
 
 @media (max-width: 575.98px) {
 
-
     #hero h1{
         font-size: 56px;
     }
@@ -453,9 +453,15 @@ footer .copy{
         max-width: 320px;
     }
 
+    div.back-container{
+        position: relative;
+        /* object-fit: cover !important;  
+        overflow: hidden !important; */
+    }
+
     .wrapper.top .back{
-        transform: scale(3);
-        top: 400px;
+        transform: scale(4);
+        top: -1000px;
         right: 0;
     }
 
@@ -512,14 +518,14 @@ footer .copy{
     }
 
     #about .part.second {
-        top: 300px;
+        top: 250px;
     }
 
     #about .part.first .content{
         display: flex;
         flex-direction: column;
         width: 90%; 
-        padding-top: 50px;
+        padding-top: 0;
     }
 
     #about .part.first .content p{
@@ -527,12 +533,12 @@ footer .copy{
     }
 
     #about iframe{
-        transform: scale(0.3);
+        transform: scale(0.25);
     }
 
     #about .part iframe.start{
         left: -810px;
-        top: 330px;
+        top: 280px;
     }
 
     #about .part iframe.end{
@@ -541,13 +547,15 @@ footer .copy{
     }
 
     .wrapper.middle .back{
-        transform: scale(3);
-        top: 2500px;
+        transform: scale(4);
+        top: 750px;
         right: 0;
     }
 
     .wrapper.middle .lamp{
-        margin-top: 400px;
+        top: 520px;
+        left: -120px;
+        transform: scale(2);
     }
 
     #menu{
@@ -629,9 +637,9 @@ footer .copy{
     }
 
     .wrapper.bottom .back{
-        top: 4200px;
+        top: 600px;
         right: 0;
-        transform: scale(3);
+        transform: scale(4.2);
     }
 
     #contacts{
@@ -647,9 +655,9 @@ footer .copy{
 
     footer iframe{
         left: -830px;
-        margin-top: 300px;
+        margin-top: 340px;
         /* top: 20px; */
-        transform: scale(0.35); 
+        transform: scale(0.3); 
     }
 
     footer .content{
